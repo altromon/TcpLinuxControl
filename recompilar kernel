@@ -1,0 +1,16 @@
+Borrar acceso directo a linux en /usr/src
+En /usr/src/linux-2.4.20-8 abrir consola
+teclea:
+-make xconfig
+Cargar el archivo de configuracion conf, guardar y salir
+-make dep
+-make bzImage
+-make modules
+-cp arch/i386/boot/bzImage /boot/vmlinuz-2.4.20-8custom
+-make modules_install
+-mkinitrd -v /boot/initrd-2.4.20-8custom.img 2.4.20-8custom
+
+Modificar grub.conf añadiendo un elemento maś con los nombres que se acaban de crear
+
+Reiniciar y arrancar
+

@@ -1,0 +1,2 @@
+ gcc -pthread -o TCP_Linux_Control.o TCP_Linux_Control.c borrar.c guardar.c lee_linea.c lista.c modificar.c salir.c server_dgram.c serv_msj.c ver.c lista_seg.c hebra_seg.c modificar_sleep.c dibuja_grafica.c callbacks.c `pkg-config --cflags --libs gtk+-2.0 gthread-2.0`
+ 

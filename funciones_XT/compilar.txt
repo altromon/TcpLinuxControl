@@ -1,0 +1,7 @@
+gcc -c -pthread alta.c baja.c cliente_dgram.c funciones_XT.c hebra_envia.c hebra_recibe.c lee_linea.c
+
+ar -r libXT.a alta.o baja.o cliente_dgram.o funciones_XT.o hebra_envia.o hebra_recibe.o lee_linea.o funciones_XT.h
+
+gcc -pthread server.c libXT.a -o server.o
+
+gcc -pthread cliente2.c libXT.a -o cliente2.o
